@@ -1,0 +1,120 @@
+/* Genre dropdown styling */
+.genre-select {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #d1d5db;
+  font-size: 1.08rem;
+  background: #f3f4f6;
+  margin-bottom: 0.5rem;
+  color: #222;
+  transition: border 0.2s, background 0.2s;
+}
+.genre-select:focus {
+  border-color: #6366f1;
+  background: #fff;
+}
+body.dark .genre-select {
+  background: #23272f;
+  color: #eee;
+  border-color: #6366f1;
+}
+body {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+body.dark {
+  background: linear-gradient(135deg, #18181b 0%, #27272a 100%);
+  color: #eee;
+}
+.container {
+  background: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 24px #0001;
+  border: 2px solid #6366f1;
+  max-width: 420px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+body.dark .container {
+  background: #23272f;
+  color: #eee;
+  border-color: #4338ca;
+}
+body.dark .container {
+  background: #23272f;
+  color: #eee;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 0.5rem;
+}
+input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  transition: border 0.2s;
+  outline: none;
+  margin-top: 0.5rem;
+  background: #f3f4f6;
+}
+input:focus {
+  border-color: #6366f1;
+  background: #fff;
+}
+button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: none;
+  background: #6366f1;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #6366f133;
+  transition: background 0.2s, transform 0.1s;
+  margin-top: 0.5rem;
+}
+button:hover {
+  background: #4338ca;
+  transform: translateY(-2px) scale(1.03);
+}
+.story {
+  margin-top: 1.5rem;
+  background: #f3f4f6;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  font-size: 1.05rem;
+  color: #222;
+  box-shadow: 0 2px 8px #0001;
+  line-height: 1.7;
+  min-height: 80px;
+  white-space: pre-line;
+  transition: background 0.3s, color 0.3s;
+}
+body.dark .story {
+  background: #18181b;
+  color: #eee;
+}
+@media (max-width: 600px) {
+  .container { padding: 1.5rem 0.5rem; }
+  h1 { font-size: 1.3rem; }
+}

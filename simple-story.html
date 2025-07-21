@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StorySpark</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="theme-toggle" style="position:fixed;top:1rem;left:1rem;padding:0.3rem 0.6rem;font-size:1.3rem;border-radius:50%;border:none;background:#6366f1;color:#fff;font-weight:600;cursor:pointer;z-index:10;width:2.2rem;height:2.2rem;display:flex;align-items:center;justify-content:center;">🌙</button>
+  <div class="container">
+    <h1>StorySpark</h1>
+    <select id="genre" class="genre-select">
+      <option value="adventure">🗺️ Adventure</option>
+      <option value="mystery">🕵️ Mystery</option>
+      <option value="sci-fi">🚀 Sci-Fi</option>
+      <option value="fairy-tale">🧚 Fairy Tale</option>
+    </select>
+    <input id="prompt" type="text" placeholder="Enter your story prompt..." autocomplete="off" />
+    <button onclick="generateStory()">Generate Story</button>
+    <div id="story" class="story"></div>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      themeToggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    });
+  </script>
+  </script>
+</body>
+</html>
