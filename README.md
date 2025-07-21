@@ -1,3 +1,10 @@
 # StorySpark
 
-This is a simple website built with HTML/CSS/JavaScript.
+StorySpark is a small web project that lets users generate or interact with stories.
+
+## 🛠️ Built With
+- HTML
+- CSS
+- JavaScript
+
+
